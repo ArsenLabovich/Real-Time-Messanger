@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div id="connected-users-information-container">
+    <div id="nickname-display"></div>
+    <div id="users" class="users-container">
+    </div>
+    <button id="public-chat-btn">Public-Chat</button>
+</div>
+
+
+<div class="nickname-container">
+    <div class="nickname-input-container">
+        <input type="text" id="input-username" placeholder="Enter your nickname" autofocus autocomplete="off">
+        <button id="send-username-btn">&#11166;</button>
+    </div>
+</div>
+
+<div class="chat-name-and-chat-container">
+    <div id="chat-with"></div>
+    <div class="chat-container">
+        <div id="messages">
+        </div>
+        <div class="input-container">
+            <input type="text" id="input-msg" placeholder="Type a message" autofocus autocomplete="off">
+            <button id="send-msg-btn">&#10148;</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="script.js"></script>
+<script src="registration.js"></script>
+</body>
+</html>

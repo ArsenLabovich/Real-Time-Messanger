@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.playwright:driver:1.30.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.microsoft.playwright" artifactId="driver" version="1.30.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.playwright/driver/1.30.0/40d47e13c6275ab3500b4a2c052b48ad594f1e0f/driver-1.30.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

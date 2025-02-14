@@ -1,0 +1,64 @@
+type: edu
+files:
+  - name: resources/application.properties
+    visible: true
+    learner_created: false
+  - name: src/chat/Main.java
+    visible: true
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    learner_created: false
+  - name: test/ChatTests.java
+    visible: false
+    learner_created: false
+  - name: src/chat/service/SessionsService.java
+    visible: true
+    learner_created: true
+  - name: resources/static/styles.css
+    visible: true
+    learner_created: true
+  - name: resources/static/script.js
+    visible: true
+    learner_created: true
+  - name: src/chat/configuration/WebSocketStompConfig.java
+    visible: true
+    learner_created: true
+  - name: src/chat/controller/ChatMessagesController.java
+    visible: true
+    learner_created: true
+  - name: resources/static/images/user.png
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/chat/service/MessagesService.java
+    visible: true
+    learner_created: true
+  - name: resources/static/index.html
+    visible: true
+    learner_created: true
+  - name: src/chat/controller/ChatController.java
+    visible: true
+    learner_created: true
+  - name: resources/static/registration.js
+    visible: true
+    learner_created: true
+  - name: src/chat/listener/WebSocketEventListener.java
+    visible: true
+    learner_created: true
+  - name: src/chat/service/UserService.java
+    visible: true
+    learner_created: true
+  - name: src/chat/dto/ChatUser.java
+    visible: true
+    learner_created: true
+  - name: src/chat/dto/ChatMessage.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/24565#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Fri, 14 Feb 2025 18:42:56 UTC"
+record: -1

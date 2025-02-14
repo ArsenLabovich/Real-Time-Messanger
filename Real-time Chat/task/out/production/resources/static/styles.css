@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.chat-name-and-chat-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#chat-with{
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 32px;
+    max-height: 50px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.chat-container {
+    width: 60%;
+    height: 75%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+    margin-right: 2%;
+}
+
+#public-chat-btn{
+    margin-top: 5%;
+    background-color: #007aff;
+    color: white;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    width: 15vw;
+    border-radius: 10px;
+}
+#public-chat-btn:hover {
+    background-color: #333!important;
+}
+#messages {
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+.message-container {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #007aff;
+    color: white;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0.25%;
+    min-width: 1vw;
+    text-align: center;
+    width: fit-content;
+    max-width: 50vw;
+    word-wrap: break-word;
+}
+
+
+.other-message {
+    background-color: darkgray;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0.25%;
+    min-width: 1vw;
+    text-align: center;
+    width: fit-content;
+    max-width: 50vw;
+    word-wrap: break-word;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+#send-msg-btn {
+    background: none;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 28px;
+}
+
+.nickname-container {
+    width: 30%;
+    background-color: #e0e4e8;
+    border-radius: 18px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.nickname-input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+    outline: none;
+    background-color: lightgray;
+}
+
+#send-username-btn {
+    background: none;
+    height: 120%;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 34px;
+    color: #007aff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#connected-users-information-container{
+    display: none;
+}
+
+
+
+
+#nickname-display {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#nickname {
+    align-self: center;
+    margin-left: 1%;
+}
+
+img {
+    width: 8%;
+    height: 8%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #1aff00;
+    animation: blink-border 2s infinite;
+}
+
+@keyframes blink-border {
+    0% {
+        border-color: #1aff00;
+    }
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: #1aff00;
+    }
+}
+
+
+#connected-users-information-container {
+    display: none;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 18px;
+    padding: 12px;
+    margin-left: 0;
+}
+
+.users-container {
+    width: 15vw;
+    height: 80vh;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    margin-top: 5%;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.users-container {
+
+}
+
+
+.user-container{
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.user{
+    width: 80%;
+}
+.new-message-counter {
+    margin-left: auto;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.user-container .new-message-counter:hover {
+    background-color: #e9e9e9!important;
+}

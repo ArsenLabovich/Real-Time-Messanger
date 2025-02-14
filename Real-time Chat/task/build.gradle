@@ -1,0 +1,37 @@
+buildscript {
+    apply plugin: 'hyperskill'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$hs.spring.bootVersion"
+        classpath "io.spring.gradle:dependency-management-plugin:$hs.spring.dependencyManagementVersion"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.jetbrains.team/maven/p/academy/hyperskill-hspc" }
+    maven { url "https://jitpack.io" }
+}
+
+sourceSets.main.resources.srcDirs = ["resources"]
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-starter-activemq'
+    implementation('org.springframework.boot:spring-boot-starter-validation:3.4.2')
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'com.microsoft.playwright:playwright:1.30.0'
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+}
