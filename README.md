@@ -32,7 +32,7 @@ Frontend: HTML, CSS, JavaScript (for dynamic UI updates)
 
 Backend: Java with Spring Boot
 
-Real-Time Communication: WebSocket & STOMP
+Real-Time Communication: WebSocket & STOMP, ActiveMQ as Broker.
 
 What I Learned
 
